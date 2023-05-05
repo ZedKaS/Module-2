@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+.box{
+    width: 100%;
+}
+.name1{
+    background-color: rgb(218, 143, 156);
+}
+.name2{
+    background-color: brown;
+    color: white;
+}
+.name3{
+    background-color: burlywood;
+}
+.content-name{
+    border: 3px solid black;/*Les contours*/
+    text-align: center;/*Mettre le texte au centre*/
+    width: 250px;/*largeur du block*/
+    height: 50px;/*hauteur du block*/
+    overflow: none;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 10px;/*espace entre le texte et le haut du block*/
+    position: static;/*type de positionnement static*/
+    float: right;/*le bouger vers la droite*/
+    margin-right: 10px;/*positionement par rappot au block derrière*/
+    margin-top: 1px;
+    margin-left: 5px;
+}
+.content{
+    border: 5px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: auto;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-size: larger;
+    background-color: grey;
+    font-weight: bolder;
+    margin: 10px;
+}
+@media (min-width:992px ) {
+    .col-lg-4{
+        width: 33.33%;
+        float: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .col-md-6,.col-md-12
+    {
+        float: left;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+@media(min-width: 0px) and (max-width: 767px)
+{
+    .col-sm-12{
+        float: left;
+        width: 100%;
+    }
+}
+
+
